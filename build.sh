@@ -4,6 +4,7 @@ set -e
 
 tag="${1}"
 versionDate="${2}"
+release="${3}"
 
 if [ "${tag}" == "" ]; then
   echo "tag argument required"
@@ -29,3 +30,7 @@ GOOS=windows GOARCH=386   go build -ldflags "-X main.version=${tag} -X main.vers
 GOOS=windows GOARCH=amd64 go build -ldflags "-X main.version=${tag} -X main.versionDate=${versionDate}" -o "dist/windows-x86_64-${tag}"
 
 mv dist ../
+
+if [ "${release}" == "true" ]; then
+  gh release create $tag ./dist/* --title="${tag}" --notes "${tag}"
+fi

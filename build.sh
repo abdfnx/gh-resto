@@ -15,11 +15,11 @@ if [ "${versionDate}" == "" ]; then
   exit 1
 fi
 
-rm -rf resto
+rm -rf rs
 rm -rf dist
 
-git clone https://github.com/abdfnx/resto
-cd resto
+git clone https://github.com/abdfnx/resto rs
+cd rs
 go mod tidy
 
 GOOS=darwin  GOARCH=amd64 go build -ldflags "-X main.version=${tag} -X main.versionDate=${versionDate}" -o "dist/darwin-x86_64-${tag}" 

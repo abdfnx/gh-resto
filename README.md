@@ -1,16 +1,16 @@
 # gh-resto - the github extension of [**resto**](https://github.com/abdfnx/resto)
 
-> CLI app can send pretty HTTP & API requests from your terminal with GUI.
+> a CLI app can send pretty HTTP & API requests with TUI
 
 this is the the github extension of [**resto**](https://github.com/abdfnx/resto), for more details refer to [**resto**](https://github.com/abdfnx/resto) repo
 
-![demo](https://user-images.githubusercontent.com/64256993/145669325-d9f122d9-c562-417f-a223-a7f2b1c49adb.gif)
+![demo](https://user-images.githubusercontent.com/64256993/145714018-5f03fbd7-de69-49ed-bdb2-412edc055907.gif)
 
 ## Installation
 
 > Installation requires a minimum version (2.0.0) of the the Github CLI to support extensions.
 
-- Install the [GitHub CLI](https://cli.github.com)
+- Install the [**GitHub CLI**](https://cli.github.com)
 
 - then Install this extension:
 

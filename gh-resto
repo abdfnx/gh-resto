@@ -2,8 +2,8 @@
 set -e
 
 repo="abdfnx/gh-resto"
-tag="v0.1.4"
-buildDate="(2021-12-24)"
+tag="v0.1.5"
+buildDate="(2021-12-25)"
 
 extensionPath="$(dirname "$0")"
 arch="$(uname -m)"
